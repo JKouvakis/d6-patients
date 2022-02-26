@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{70eb1a16-f433-4eb0-9b8e-e1443d04b586}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>patients.exe</DCC_DependencyCheckOutputName>
+    <MainSource>patients.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_ExeOutput>C:\Users\Freddo\Desktop\Patients Project</DCC_ExeOutput>
+    <DCC_DcuOutput>C:\Users\Freddo\Desktop\Patients Project</DCC_DcuOutput>
+    <DCC_ObjOutput>C:\Users\Freddo\Desktop\Patients Project</DCC_ObjOutput>
+    <DCC_HppOutput>C:\Users\Freddo\Desktop\Patients Project</DCC_HppOutput>
+    <DCC_BplOutput>C:\Users\Freddo\Desktop\Patients Project</DCC_BplOutput>
+    <DCC_UnitSearchPath>C:\Users\Freddo\Desktop\Patients Project</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\Users\Freddo\Desktop\Patients Project</DCC_ResourcePath>
+    <DCC_ObjPath>C:\Users\Freddo\Desktop\Patients Project</DCC_ObjPath>
+    <DCC_IncludePath>C:\Users\Freddo\Desktop\Patients Project</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">2</VersionInfo><VersionInfo Name="MinorVer">3</VersionInfo><VersionInfo Name="Release">7</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1032</VersionInfo><VersionInfo Name="CodePage">1253</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Ν.Ρ.Χ Γάτος</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Αρχείο Ασθενών</VersionInfoKeys><VersionInfoKeys Name="FileVersion">2.3.7</VersionInfoKeys><VersionInfoKeys Name="InternalName">Αρχείο Ασθενών</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">401 Ν.Ρ.Χ. Γάτος</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">401 N.Ρ.Χ. Γάτος</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">patients_info.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">Αρχείο Ασθενών</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">2.3.7</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">patients.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="patients.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="about.pas">
+      <Form>AboutBox</Form>
+    </DCCReference>
+    <DCCReference Include="Easter_Egg.pas">
+      <Form>EasterEgg</Form>
+    </DCCReference>
+    <DCCReference Include="followup_info.pas">
+      <Form>FollowUpInfo</Form>
+    </DCCReference>
+    <DCCReference Include="Image_Viewer.pas">
+      <Form>ImageViewer</Form>
+    </DCCReference>
+    <DCCReference Include="Patients_info.pas">
+      <Form>PatientsInfo</Form>
+    </DCCReference>
+    <DCCReference Include="patients_search.pas">
+      <Form>Form1</Form>
+    </DCCReference>
+    <DCCReference Include="splash_frm.pas">
+      <Form>slpash_frm</Form>
+    </DCCReference>
+    <DCCReference Include="Surgery_info.pas">
+      <Form>SurgeryInfo</Form>
+    </DCCReference>
+    <DCCReference Include="VVersionInfo.pas" />
+  </ItemGroup>
+</Project>
